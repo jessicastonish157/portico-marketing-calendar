@@ -1,0 +1,946 @@
+{
+  "lastUpdated": "2026-05-01T16:31:43Z",
+  "campaigns": [
+    {
+      "name": "Financial Aid (OBBBA)",
+      "product": "Financial Aid",
+      "status": "Active",
+      "landingPage": "",
+      "who": {
+        "description": "Financial aid administrators and directors at career-focused institutions",
+        "audienceLink": ""
+      },
+      "what": "Awareness campaign focused on how OBBBA changes affect institutional loan limit determinations and what schools need to know before the effective date.",
+      "where": "Google Ads, LinkedIn Ads, outbound email sequences",
+      "how": [
+        "Lead with the compliance angle: schools that miss this will have problems at audit",
+        "Position Portico FA as the tool that handles the new complexity automatically",
+        "Use AMA Monthly webinar as a conversion point for warm leads"
+      ],
+      "motions": [
+        {
+          "label": "Outbound Sequence - FA Admins",
+          "url": ""
+        },
+        {
+          "label": "Google Ads Campaign",
+          "url": ""
+        },
+        {
+          "label": "LinkedIn Ads Campaign",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "Clinical Management (Trajecsys)",
+      "product": "Clinical Management",
+      "status": "Active",
+      "landingPage": "",
+      "who": {
+        "description": "Program directors and clinical coordinators at allied health and nursing programs",
+        "audienceLink": ""
+      },
+      "what": "Brand awareness and lead generation for Trajecsys clinical management, targeting accreditation-driven programs during conference season.",
+      "where": "ACEN and ASRT conference presence, targeted outbound sequences",
+      "how": [
+        "Lead with accreditation outcomes: documentation compliance reduces audit risk",
+        "Leverage Trajecsys brand equity among clinical programs",
+        "Tie The Commons content (case studies, articles) to demo requests"
+      ],
+      "motions": [
+        {
+          "label": "Outbound Sequence - Program Directors",
+          "url": ""
+        },
+        {
+          "label": "ACEN Conference",
+          "url": ""
+        },
+        {
+          "label": "ASRT Conference",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "name": "Attendance",
+      "product": "Attendance",
+      "status": "Active",
+      "landingPage": "",
+      "who": {
+        "description": "Campus directors and administrators at career schools focused on student retention and outcomes",
+        "audienceLink": ""
+      },
+      "what": "Brand awareness for Portico Attendance and Skills tracking, positioning it as the answer to retention and externship tracking challenges.",
+      "where": "Google Ads, outbound email sequences",
+      "how": [
+        "Frame attendance technology as a student outcomes issue, not an administrative one",
+        "Connect to externship and skills tracking as a unified value prop",
+        "Drive to The Commons content as a warm-up before outreach"
+      ],
+      "motions": [
+        {
+          "label": "Outbound Sequence - Program Directors",
+          "url": ""
+        },
+        {
+          "label": "Google Ads Campaign",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "date": "2026-04-27",
+      "tags": "Attendance, Skills, Payments",
+      "title": "MyPortico Launch",
+      "type": "Product Update",
+      "audience": "Attendance Users",
+      "sender": "Product",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-04-29",
+      "tags": "Portico Suite",
+      "title": "CECU Landing Page",
+      "type": "Website",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/cecu-2026"
+    },
+    {
+      "date": "2026-04-29",
+      "tags": "Financial Aid",
+      "title": "Product Video: OBBBA",
+      "type": "Video",
+      "audience": "FA Customers & Prospects",
+      "sender": "",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://7762472.fs1.hubspotusercontent-na1.net/hubfs/7762472/OBBBA%20Product%20Videos/Introducing%20Institutionally%20Determined%20Loan%20Limits.mp4"
+    },
+    {
+      "date": "2026-04-30",
+      "tags": "Clinical Management",
+      "title": "Trajecsys Competitor One-Pager (Editable)",
+      "type": "Sales Asset",
+      "audience": "Trajecsys Prospects",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://canva.link/7xrskaxfpiycmmf"
+    },
+    {
+      "date": "2026-05-01",
+      "tags": "Portico Suite",
+      "title": "FASFAA Landing Page",
+      "type": "Website",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-05",
+      "tags": "Financial Aid",
+      "title": "OBBBA - Preparing Career-Focused Institutions",
+      "type": "Article",
+      "audience": "FA Customers & Prospects",
+      "sender": "Siana Stewart-Mullings",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-07",
+      "tags": "Financial Aid",
+      "title": "May Financial Aid Newsletter",
+      "type": "Email",
+      "audience": "All Financial Aid Contacts",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-11",
+      "tags": "CRM / Recruit",
+      "title": "Document Upload",
+      "type": "Product Update",
+      "audience": "CRM / Recruit Users",
+      "sender": "Product",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-11",
+      "tags": "CRM / Recruit",
+      "title": "Bulk Doument Send",
+      "type": "Product Update",
+      "audience": "CRM / Recruit Users",
+      "sender": "Product",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-11",
+      "tags": "SIS",
+      "title": "Automating Status Changes (\"Power Tools for Registrars\")",
+      "type": "Product Update",
+      "audience": "SIS Users",
+      "sender": "Product",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-12",
+      "tags": "Financial Aid",
+      "title": "FASFAA Pre-Event Email",
+      "type": "Event Comms",
+      "audience": "FASFAA Attendees",
+      "sender": "Noel Suarez",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-12",
+      "tags": "CRM",
+      "title": "May Product Newsletter - CRM",
+      "type": "Product Comms",
+      "audience": "CRM Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-12",
+      "tags": "SIS",
+      "title": "May Product Newsletter - SIS",
+      "type": "Product Comms",
+      "audience": "SIS Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-18",
+      "tags": "",
+      "title": "Memorial Day Closure Notification",
+      "type": "Email",
+      "audience": "All Customers",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-19",
+      "tags": "Momentum",
+      "title": "Momentum 2027: Save the Date",
+      "type": "Email",
+      "audience": "General Audience",
+      "sender": "Natalie Gleason",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-20",
+      "tags": "",
+      "title": "May Portico POV Newsletter",
+      "type": "Email",
+      "audience": "Newsletter Subscribers",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-20",
+      "tags": "Attendance, Skills, Payments",
+      "title": "May Product Newsletter - Attendance",
+      "type": "Product Comms",
+      "audience": "Attendance Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-25",
+      "tags": "Portico Brand",
+      "title": "Happy Memorial Day",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-26",
+      "tags": "Financial Aid",
+      "title": "FASFAA 2026 | Daytona Beach, FL",
+      "type": "Event",
+      "audience": "Florida Postsecondary Schools",
+      "sender": "",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQDJy9q5tvFDTYAecn8zVLvtASMPasFobtFVhLA6Tk9ZEDk?e=H",
+      "endDate": "2026-05-29",
+      "attendees": "Karen, TBD (plus Rene Lezcano: Hollywood/Cortiva)"
+    },
+    {
+      "date": "2026-05-27",
+      "tags": "The Commons",
+      "title": "OBBBA - Hollywood/Cortiva Case Study",
+      "type": "Case Study",
+      "audience": "The Commons",
+      "sender": "Karen Martin-Brown",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-28",
+      "tags": "Clinical Management",
+      "title": "ACEN Pre-Event Email",
+      "type": "Event Comms",
+      "audience": "ACEN Attendees",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-29",
+      "tags": "Portico Suite",
+      "title": "NASFAA Landing Page",
+      "type": "Website",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-01",
+      "tags": "Clinical Management",
+      "title": "What Scattered Clinical Documentation Does to Students",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Cara Heinrich",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-01",
+      "tags": "Clinical Management",
+      "title": "How to Switch from Paper to Digital",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Georgia Grey",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-01",
+      "tags": "Financial Aid",
+      "title": "Financial Aid Has a New Ceiling",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Nan Murray",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-01",
+      "tags": "CRM / Recruit",
+      "title": "The Case for TikTok in Career School Recruiting",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Jenn Lyles, Darius Goldman",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-01",
+      "tags": "Attendance",
+      "title": "Attendance Is a Technology Problem",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Jackson Batchelder",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-02",
+      "tags": "Financial Aid",
+      "title": "FASFAA Post-Event Email",
+      "type": "Event Comms",
+      "audience": "FASFAA Attendees",
+      "sender": "Noel Suarez",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-04",
+      "tags": "Portico Suite",
+      "title": "\"The Work After Yes\" Panel Takeaways",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Natalie Gleason",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-08",
+      "tags": "SIS",
+      "title": "Academic Calendar Redesign",
+      "type": "Product Update",
+      "audience": "SIS Users",
+      "sender": "Product",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-11",
+      "tags": "Clinical Management",
+      "title": "ACEN 2026 | Rosemont, IL",
+      "type": "Event",
+      "audience": "Nursing Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQCOwWZ57RExRpfoOdwRK5cDAZlryGrBp-J5UEjlmdE9CCU?e",
+      "endDate": "2026-06-12",
+      "attendees": "Georgia, Mandy, Ron"
+    },
+    {
+      "date": "2026-06-11",
+      "tags": "Financial Aid",
+      "title": "June Financial Aid Newsletter",
+      "type": "Email",
+      "audience": "All Financial Aid Contacts",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-11",
+      "tags": "CRM",
+      "title": "June Product Newsletter - CRM",
+      "type": "Product Comms",
+      "audience": "CRM Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-12",
+      "tags": "Portico Suite",
+      "title": "CECU Pre-Event Email",
+      "type": "Event Comms",
+      "audience": "CECU Attendees",
+      "sender": "Natalie Gleason",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-12",
+      "tags": "SIS",
+      "title": "June Product Newsletter - SIS",
+      "type": "Product Comms",
+      "audience": "SIS Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-14",
+      "tags": "Clinical Management",
+      "title": "ASRT Ed Pre-Event Email",
+      "type": "Event Comms",
+      "audience": "ASRT Ed Attendees",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-15",
+      "tags": "Financial Aid",
+      "title": "NASFAA Pre-Event Email",
+      "type": "Event Comms",
+      "audience": "NASFAA Attendees",
+      "sender": "Noel Suarez",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-16",
+      "tags": "Attendance",
+      "title": "Reimagine Your Externships",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Ryan Barnhart",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-17",
+      "tags": "Clinical Management",
+      "title": "ACEN Post-Event Email",
+      "type": "Event Comms",
+      "audience": "ACEN Attendees",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-19",
+      "tags": "Portico Community",
+      "title": "The Commons Launch",
+      "type": "Website",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-22",
+      "tags": "Portico Suite",
+      "title": "CECU 2026 | Cleveland, OH",
+      "type": "Event",
+      "audience": "Career education schools in U.S.",
+      "sender": "",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQAOqTCKwQyUQIcJ9jTgdAFgAfvrCs_ql78gYyqJaiyzLB0?e=Fme",
+      "endDate": "2026-06-24",
+      "attendees": "Natalie, Dale, Cara, Marc, Chris, Siana"
+    },
+    {
+      "date": "2026-06-24",
+      "tags": "",
+      "title": "June Portico POV Newsletter",
+      "type": "Email",
+      "audience": "Newsletter Subscribers",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-25",
+      "tags": "Clinical Management",
+      "title": "ASRT 2026 | Albuquerque, NM",
+      "type": "Event",
+      "audience": "ASRT Ed Attendees",
+      "sender": "",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-06-28",
+      "attendees": "Jackson, FA rep"
+    },
+    {
+      "date": "2026-06-26",
+      "tags": "Financial Aid",
+      "title": "OBBBA - AMA Monthly [TENTATIVE]",
+      "type": "Webinar",
+      "audience": "FA Customers & Prospects",
+      "sender": "Siana Stewart-Mullings",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-29",
+      "tags": "Financial Aid",
+      "title": "NASFAA 2026 | National Harbor, MD",
+      "type": "Event",
+      "audience": "FA professionals in U.S. institutions",
+      "sender": "",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-07-01",
+      "attendees": "Siana, Noel, Karen, Christina"
+    },
+    {
+      "date": "2026-07-01",
+      "tags": "Portico Suite",
+      "title": "CECU Post-Event Email",
+      "type": "Event Comms",
+      "audience": "CECU Attendees",
+      "sender": "Natalie Gleason",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-07-02",
+      "tags": "Clinical Management",
+      "title": "ASRT Ed Post-Event Email",
+      "type": "Event Comms",
+      "audience": "ASRT Ed Attendees",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-07-08",
+      "tags": "Financial Aid",
+      "title": "NASFAA Post-Event Email",
+      "type": "Event Comms",
+      "audience": "NASFAA Attendees",
+      "sender": "Noel Suarez",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-07-13",
+      "tags": "Clinical Management",
+      "title": "AARC Forum | Bonita Springs, FL",
+      "type": "Event",
+      "audience": "",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-07-15",
+      "attendees": "Brian"
+    },
+    {
+      "date": "2026-07-15",
+      "tags": "Payments",
+      "title": "Payments \"Launch\"",
+      "type": "Website",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-07-15",
+      "tags": "Clinical Management",
+      "title": "AEIRS | San Francisco, CA",
+      "type": "Event",
+      "audience": "",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-07-17",
+      "attendees": "Mark Moore"
+    },
+    {
+      "date": "2026-07-17",
+      "tags": "Clinical Management",
+      "title": "CAAHEP Workshop | Denver, CO",
+      "type": "Event",
+      "audience": "",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-07-18",
+      "attendees": "Shawna"
+    },
+    {
+      "date": "2026-07-31",
+      "tags": "Clinical Management",
+      "title": "AVTE | Portland, OR",
+      "type": "Event",
+      "audience": "Vet Tech Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-08-02",
+      "attendees": "Cara, Dale"
+    },
+    {
+      "date": "2026-08-05",
+      "tags": "Portico Suite",
+      "title": "FAPSC | Orlando, FL",
+      "type": "Event",
+      "audience": "Florida Postsecondary Schools",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-08-07",
+      "attendees": "Shawna"
+    },
+    {
+      "date": "2026-08-05",
+      "tags": "Portico Suite",
+      "title": "AFIT | Albuquerque, NM",
+      "type": "Event",
+      "audience": "Community Colleges",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-08-08",
+      "attendees": "Noel, Ron"
+    },
+    {
+      "date": "2026-08-10",
+      "tags": "Portico Suite",
+      "title": "CSPEN | Austin, TX",
+      "type": "Event",
+      "audience": "",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-08-13",
+      "attendees": "Chris"
+    },
+    {
+      "date": "2026-09-24",
+      "tags": "Clinical Management",
+      "title": "SDMS | Atlanta, GA",
+      "type": "Event",
+      "audience": "Sonography",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-09-26",
+      "attendees": "Jackson/Dylan"
+    },
+    {
+      "date": "2026-09-28",
+      "tags": "Portico Suite",
+      "title": "CCST Annual | San Antonio, TX",
+      "type": "Event",
+      "audience": "",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-09-29",
+      "attendees": "Cid/Brian/Marc"
+    },
+    {
+      "date": "2026-10-07",
+      "tags": "Portico Suite",
+      "title": "CAPPS Annual | San Diego, CA",
+      "type": "Event",
+      "audience": "California - Enterprise",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-10-09",
+      "attendees": "Daniel"
+    },
+    {
+      "date": "2026-10-10",
+      "tags": "Clinical Management",
+      "title": "CACN/COADN | Monterey, CA",
+      "type": "Event",
+      "audience": "CA nursing Joint association conference",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-10-13",
+      "attendees": "Cara (Shawna backup)"
+    },
+    {
+      "date": "2026-10-14",
+      "tags": "Portico Suite",
+      "title": "PMTS Owners Summit | New York, NY",
+      "type": "Event",
+      "audience": "",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-10-17",
+      "attendees": "Jackson"
+    },
+    {
+      "date": "2026-10-24",
+      "tags": "Clinical Management",
+      "title": "FNCE | San Antonio, TX",
+      "type": "Event",
+      "audience": "Food & Nutrition Conference Expo",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-10-27",
+      "attendees": "Jackson"
+    },
+    {
+      "date": "2026-10-25",
+      "tags": "Clinical Management",
+      "title": "AACN | Washington, DC",
+      "type": "Event",
+      "audience": "Nursing Colleges",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-10-27",
+      "attendees": "Cara"
+    },
+    {
+      "date": "2026-10-27",
+      "tags": "Clinical Management",
+      "title": "ASAHP | Nashville, TN",
+      "type": "Event",
+      "audience": "Health professions education",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-10-29",
+      "attendees": "Todd"
+    },
+    {
+      "date": "2026-11-10",
+      "tags": "Portico Suite",
+      "title": "COE | Atlanta, GA",
+      "type": "Event",
+      "audience": "",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-11-12",
+      "attendees": "Mark Moore"
+    },
+    {
+      "date": "2026-11-12",
+      "tags": "Clinical Management",
+      "title": "OADN | San Antonio, TX",
+      "type": "Event",
+      "audience": "Nursing",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-11-14",
+      "attendees": "Mandy, Georgia"
+    },
+    {
+      "date": "2026-11-14",
+      "tags": "Clinical Management",
+      "title": "AARC Congress | New Orleans, LA",
+      "type": "Event",
+      "audience": "Respiratory Therapists",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "endDate": "2026-11-17",
+      "attendees": "Shawna"
+    },
+    {
+      "date": null,
+      "tags": "Clinical Management",
+      "title": "May Product Newsletter - Clinical Management",
+      "type": "Product Comms",
+      "audience": "Trajecsys Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": null,
+      "tags": "Financial Aid",
+      "title": "May Product Newsletter - FA",
+      "type": "Product Comms",
+      "audience": "FA Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": null,
+      "tags": "Attendance, Skills, Payments",
+      "title": "June Product Newsletter - Attendance",
+      "type": "Product Comms",
+      "audience": "Attendance Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": null,
+      "tags": "Financial Aid",
+      "title": "June Product Newsletter - FA",
+      "type": "Product Comms",
+      "audience": "FA Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": null,
+      "tags": "Clinical Management",
+      "title": "June Product Newsletter - Clinical Management",
+      "type": "Product Comms",
+      "audience": "Trajecsys Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": null,
+      "tags": "Clinical Management",
+      "title": "NELNE Fall Conference | TBD",
+      "type": "Event",
+      "audience": "Nursing",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "attendees": "Noel"
+    }
+  ]
+}
