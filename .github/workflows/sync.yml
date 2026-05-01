@@ -2,8 +2,8 @@ name: Sync Marketing Calendar
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 9am ET
-    - cron: '0 21 * * *'   # 5pm ET
+    - cron: '0 16 * * *'   # noon ET (EDT)
+    - cron: '0 21 * * *'   # 5pm ET (EDT)
   workflow_dispatch:
 
 jobs:
