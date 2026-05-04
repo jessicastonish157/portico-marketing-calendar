@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T16:31:43Z",
+  "lastUpdated": "2026-05-05T20:00:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -18,18 +18,9 @@
         "Use AMA Monthly webinar as a conversion point for warm leads"
       ],
       "motions": [
-        {
-          "label": "Outbound Sequence - FA Admins",
-          "url": ""
-        },
-        {
-          "label": "Google Ads Campaign",
-          "url": ""
-        },
-        {
-          "label": "LinkedIn Ads Campaign",
-          "url": ""
-        }
+        { "label": "Outbound Sequence - FA Admins", "url": "" },
+        { "label": "Google Ads Campaign", "url": "" },
+        { "label": "LinkedIn Ads Campaign", "url": "" }
       ]
     },
     {
@@ -49,18 +40,9 @@
         "Tie The Commons content (case studies, articles) to demo requests"
       ],
       "motions": [
-        {
-          "label": "Outbound Sequence - Program Directors",
-          "url": ""
-        },
-        {
-          "label": "ACEN Conference",
-          "url": ""
-        },
-        {
-          "label": "ASRT Conference",
-          "url": ""
-        }
+        { "label": "Outbound Sequence - Program Directors", "url": "" },
+        { "label": "ACEN Conference", "url": "" },
+        { "label": "ASRT Conference", "url": "" }
       ]
     },
     {
@@ -80,14 +62,8 @@
         "Drive to The Commons content as a warm-up before outreach"
       ],
       "motions": [
-        {
-          "label": "Outbound Sequence - Program Directors",
-          "url": ""
-        },
-        {
-          "label": "Google Ads Campaign",
-          "url": ""
-        }
+        { "label": "Outbound Sequence - Program Directors", "url": "" },
+        { "label": "Google Ads Campaign", "url": "" }
       ]
     }
   ],
@@ -101,7 +77,7 @@
       "sender": "Product",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/myportico"
     },
     {
       "date": "2026-04-29",
@@ -117,13 +93,14 @@
     {
       "date": "2026-04-29",
       "tags": "Financial Aid",
-      "title": "Product Video: OBBBA",
+      "title": "Introducing Institutionally Determined Loan Limits",
       "type": "Video",
-      "audience": "FA Customers & Prospects",
-      "sender": "",
+      "audience": "Financial Aid Prospects",
+      "sender": "Portico",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "https://7762472.fs1.hubspotusercontent-na1.net/hubfs/7762472/OBBBA%20Product%20Videos/Introducing%20Institutionally%20Determined%20Loan%20Limits.mp4"
+      "contentLink": "https://7762472.fs1.hubspotusercontent-na1.net/hubfs/7762472/OBBBA%20Product%20Videos/Introducing%20Institutionally%20Determined%20Loan%20Limits.mp4",
+      "youtubeLink": "https://youtu.be/FsmO1QoJnCU?si=IcQD2ek7XJNY0eER"
     },
     {
       "date": "2026-04-30",
@@ -138,22 +115,45 @@
     },
     {
       "date": "2026-05-01",
+      "tags": "Financial Aid",
+      "title": "OBBBA Resource Hub One-Pager",
+      "type": "Sales Asset",
+      "audience": "Financial Aid Prospects",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://7762472.fs1.hubspotusercontent-na1.net/hubfs/7762472/OBBBA%20Resource%20Hub%20One-Pager.pdf"
+    },
+    {
+      "date": "2026-05-04",
+      "tags": "Financial Aid",
+      "title": "Identifying Grandfathered Students in CORE",
+      "type": "Video",
+      "audience": "Financial Aid Prospects",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://7762472.fs1.hubspotusercontent-na1.net/hubfs/7762472/OBBBA%20Product%20Videos/Identifying%20Grandfathered%20Students%20in%20CORE.mp4",
+      "youtubeLink": "https://youtu.be/3hO1uCJE_Cc?si=mJpmjNUarlUfaCn2"
+    },
+    {
+      "date": "2026-05-04",
+      "tags": "Attendance, Skills, Payments",
+      "title": "MyPortico / Attendance Product Update",
+      "type": "Email",
+      "audience": "Attendance Users",
+      "sender": "Product",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/april-product-news-attendance-payments-nudges?hs_preview=DARPFiJX-212223947150"
+    },
+    {
+      "date": "2026-05-05",
       "tags": "Portico Suite",
       "title": "FASFAA Landing Page",
       "type": "Website",
       "audience": "General Audience",
       "sender": "Portico",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-05-05",
-      "tags": "Financial Aid",
-      "title": "OBBBA - Preparing Career-Focused Institutions",
-      "type": "Article",
-      "audience": "FA Customers & Prospects",
-      "sender": "Siana Stewart-Mullings",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -198,17 +198,6 @@
       "type": "Product Update",
       "audience": "SIS Users",
       "sender": "Product",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-05-12",
-      "tags": "Financial Aid",
-      "title": "FASFAA Pre-Event Email",
-      "type": "Event Comms",
-      "audience": "FASFAA Attendees",
-      "sender": "Noel Suarez",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -286,6 +275,17 @@
       "type": "Social",
       "audience": "General Audience",
       "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-26",
+      "tags": "Financial Aid",
+      "title": "FASFAA Pre-Event Email",
+      "type": "Event Comms",
+      "audience": "FASFAA Attendees",
+      "sender": "Noel Suarez",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -769,7 +769,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-09",
-      "attendees": "Daniel"
+      "attendees": "Daniel?"
     },
     {
       "date": "2026-10-10",
@@ -782,7 +782,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-13",
-      "attendees": "Cara (Shawna backup)"
+      "attendees": "Dale?"
     },
     {
       "date": "2026-10-14",
@@ -795,7 +795,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-17",
-      "attendees": "Jackson"
+      "attendees": "CS/Product?"
     },
     {
       "date": "2026-10-24",
@@ -808,7 +808,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-27",
-      "attendees": "Jackson"
+      "attendees": "Natalie"
     },
     {
       "date": "2026-10-25",
@@ -821,7 +821,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-27",
-      "attendees": "Cara"
+      "attendees": "Cara (Shawna backup)"
     },
     {
       "date": "2026-10-27",
@@ -834,7 +834,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-29",
-      "attendees": "Todd"
+      "attendees": "Jackson"
     },
     {
       "date": "2026-11-10",
@@ -847,7 +847,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-11-12",
-      "attendees": "Mark Moore"
+      "attendees": "Jackson"
     },
     {
       "date": "2026-11-12",
@@ -860,7 +860,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-11-14",
-      "attendees": "Mandy, Georgia"
+      "attendees": "Cara"
     },
     {
       "date": "2026-11-14",
@@ -873,7 +873,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-11-17",
-      "attendees": "Shawna"
+      "attendees": "Todd?"
     },
     {
       "date": null,
@@ -940,7 +940,7 @@
       "summary": "",
       "audienceLink": "",
       "contentLink": "",
-      "attendees": "Noel"
+      "attendees": "Mark Moore"
     }
   ]
 }

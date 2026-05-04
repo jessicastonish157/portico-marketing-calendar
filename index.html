@@ -1670,12 +1670,15 @@
     html += '</div>'; // close props-list
 
     // Links
-    const hasLinks = item.audienceLink || item.contentLink;
+    const hasLinks = item.audienceLink || item.contentLink || item.youtubeLink;
     if (hasLinks) {
       html += '<div class="modal-links">';
       if (item.contentLink) {
-        const btnLabel = item.type === 'Event' ? 'View Event Brief' : 'View Content';
+        const btnLabel = item.type === 'Event' ? 'View Event Brief' : (item.youtubeLink ? 'View in HubSpot' : 'View Content');
         html += '<a class="modal-link-primary" href="' + item.contentLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">' + btnLabel + '</a>';
+      }
+      if (item.youtubeLink) {
+        html += '<a class="modal-link-primary" href="' + item.youtubeLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">View in YouTube</a>';
       }
       if (item.audienceLink) {
         html += '<a class="modal-link-secondary" href="' + item.audienceLink + '" target="_blank" rel="noopener">' +
