@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05T20:00:00Z",
+  "lastUpdated": "2026-05-07T17:00:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -137,7 +137,7 @@
       "youtubeLink": "https://youtu.be/3hO1uCJE_Cc?si=mJpmjNUarlUfaCn2"
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-05-05",
       "tags": "Attendance, Skills, Payments",
       "title": "MyPortico / Attendance Product Update",
       "type": "Email",
@@ -148,7 +148,7 @@
       "contentLink": "https://welcome.porticoedu.com/april-product-news-attendance-payments-nudges?hs_preview=DARPFiJX-212223947150"
     },
     {
-      "date": "2026-05-05",
+      "date": "2026-05-06",
       "tags": "Portico Suite",
       "title": "FASFAA Landing Page",
       "type": "Website",
@@ -156,7 +156,7 @@
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/fasfaa-2026"
     },
     {
       "date": "2026-05-07",
@@ -167,7 +167,7 @@
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/-temporary-slug-86d57f63-2bd2-4dce-a3b5-533cfb2cf383?hs_preview=QuATuAyT-212310214031"
     },
     {
       "date": "2026-05-11",
