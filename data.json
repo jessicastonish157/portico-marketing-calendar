@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T17:00:00Z",
+  "lastUpdated": "2026-05-01T17:00:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -15,7 +15,7 @@
       "how": [
         "Lead with the compliance angle: schools that miss this will have problems at audit",
         "Position Portico FA as the tool that handles the new complexity automatically",
-        "Use AMA Monthly webinar as a conversion point for warm leads"
+        "Use Live OBBBA Q&A webinar as a conversion point for warm leads"
       ],
       "motions": [
         { "label": "Outbound Sequence - FA Admins", "url": "" },
@@ -182,17 +182,6 @@
     },
     {
       "date": "2026-05-11",
-      "tags": "CRM / Recruit",
-      "title": "Bulk Doument Send",
-      "type": "Product Update",
-      "audience": "CRM / Recruit Users",
-      "sender": "Product",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-05-11",
       "tags": "SIS",
       "title": "Automating Status Changes (\"Power Tools for Registrars\")",
       "type": "Product Update",
@@ -203,7 +192,7 @@
       "contentLink": ""
     },
     {
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "tags": "CRM",
       "title": "May Product Newsletter - CRM",
       "type": "Product Comms",
@@ -214,12 +203,23 @@
       "contentLink": ""
     },
     {
-      "date": "2026-05-12",
+      "date": "2026-05-13",
       "tags": "SIS",
       "title": "May Product Newsletter - SIS",
       "type": "Product Comms",
       "audience": "SIS Users",
       "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-14",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -269,6 +269,28 @@
       "contentLink": ""
     },
     {
+      "date": "2026-05-22",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-23",
+      "tags": "",
+      "title": "Customer and Portico employee testimonials",
+      "type": "Video",
+      "audience": "All Customers",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://simplifyedinc.sharepoint.com/:i:/s/Marketing/IQConz9ERzTMSaJ82fKYy3AeAXkgIdn30GQqhzNhqyap8oA?e=PkPokl"
+    },
+    {
       "date": "2026-05-25",
       "tags": "Portico Brand",
       "title": "Happy Memorial Day",
@@ -304,12 +326,34 @@
       "attendees": "Karen, TBD (plus Rene Lezcano: Hollywood/Cortiva)"
     },
     {
+      "date": "2026-05-26",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo (Day-Before)",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-05-27",
       "tags": "The Commons",
       "title": "OBBBA - Hollywood/Cortiva Case Study",
       "type": "Case Study",
       "audience": "The Commons",
       "sender": "Karen Martin-Brown",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-05-27",
+      "tags": "Financial Aid",
+      "title": "Live OBBBA Q&A",
+      "type": "Webinar",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -409,6 +453,17 @@
       "type": "Article",
       "audience": "The Commons",
       "sender": "Natalie Gleason",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-08",
+      "tags": "CRM / Recruit",
+      "title": "Bulk Doument Send",
+      "type": "Product Update",
+      "audience": "CRM / Recruit Users",
+      "sender": "Product",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -526,6 +581,61 @@
       "contentLink": ""
     },
     {
+      "date": "2026-06-17",
+      "tags": "Payments",
+      "title": "Payments Explainer Video",
+      "type": "Video",
+      "audience": "",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-17",
+      "tags": "Attendance, Skills, Payments",
+      "title": "MyPortico student and admin intro videos",
+      "type": "Video",
+      "audience": "",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-18",
+      "tags": "Portico Brand",
+      "title": "Juneteenth closure notice",
+      "type": "Email",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-18",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-19",
+      "tags": "Portico Brand",
+      "title": "Happy Juneteenth",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-06-19",
       "tags": "Portico Community",
       "title": "The Commons Launch",
@@ -574,17 +684,6 @@
       "attendees": "Jackson, FA rep"
     },
     {
-      "date": "2026-06-26",
-      "tags": "Financial Aid",
-      "title": "OBBBA - AMA Monthly [TENTATIVE]",
-      "type": "Webinar",
-      "audience": "FA Customers & Prospects",
-      "sender": "Siana Stewart-Mullings",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
       "date": "2026-06-29",
       "tags": "Financial Aid",
       "title": "NASFAA 2026 | National Harbor, MD",
@@ -609,11 +708,44 @@
       "contentLink": ""
     },
     {
+      "date": "2026-07-01",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-07-02",
       "tags": "Clinical Management",
       "title": "ASRT Ed Post-Event Email",
       "type": "Event Comms",
       "audience": "ASRT Ed Attendees",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-07-02",
+      "tags": "Portico Brand",
+      "title": "July 3 closure notice email",
+      "type": "Email",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-07-04",
+      "tags": "Portico Brand",
+      "title": "Happy July 4",
+      "type": "Social",
+      "audience": "General Audience",
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",
@@ -631,6 +763,17 @@
       "contentLink": ""
     },
     {
+      "date": "2026-07-09",
+      "tags": "Financial Aid",
+      "title": "July Financial Aid Newsletter",
+      "type": "Email",
+      "audience": "FA Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-07-13",
       "tags": "Clinical Management",
       "title": "AARC Forum | Bonita Springs, FL",
@@ -642,6 +785,17 @@
       "contentLink": "",
       "endDate": "2026-07-15",
       "attendees": "Brian"
+    },
+    {
+      "date": "2026-07-14",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo (Day-Before)",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
     },
     {
       "date": "2026-07-15",
@@ -666,6 +820,17 @@
       "contentLink": "",
       "endDate": "2026-07-17",
       "attendees": "Mark Moore"
+    },
+    {
+      "date": "2026-07-15",
+      "tags": "Financial Aid",
+      "title": "Live OBBBA Q&A",
+      "type": "Webinar",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
     },
     {
       "date": "2026-07-17",
@@ -731,6 +896,28 @@
       "contentLink": "",
       "endDate": "2026-08-13",
       "attendees": "Chris"
+    },
+    {
+      "date": "2026-09-04",
+      "tags": "Portico Brand",
+      "title": "Labor day closure announcement",
+      "type": "Email",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-09-07",
+      "tags": "Portico Brand",
+      "title": "Happy labor day",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
     },
     {
       "date": "2026-09-24",
@@ -837,6 +1024,28 @@
       "attendees": "Jackson"
     },
     {
+      "date": "2026-10-31",
+      "tags": "Portico Brand",
+      "title": "Happy Halloween",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-11-01",
+      "tags": "Portico Brand",
+      "title": "Happy national career education day",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-11-10",
       "tags": "Portico Suite",
       "title": "COE | Atlanta, GA",
@@ -848,6 +1057,17 @@
       "contentLink": "",
       "endDate": "2026-11-12",
       "attendees": "Jackson"
+    },
+    {
+      "date": "2026-11-11",
+      "tags": "Portico Brand",
+      "title": "Happy Veterans Day",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
     },
     {
       "date": "2026-11-12",
@@ -874,6 +1094,39 @@
       "contentLink": "",
       "endDate": "2026-11-17",
       "attendees": "Todd?"
+    },
+    {
+      "date": "2026-11-25",
+      "tags": "Portico Brand",
+      "title": "Thanksgiving closure announcement email",
+      "type": "Email",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-11-26",
+      "tags": "Portico Brand",
+      "title": "Happy Thanksgiving",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-12-20",
+      "tags": "Portico Brand",
+      "title": "Holiday wishes",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
     },
     {
       "date": null,
