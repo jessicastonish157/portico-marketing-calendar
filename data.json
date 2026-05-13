@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-13T15:26:00Z",
+  "lastUpdated": "2026-05-13T17:51:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -192,7 +192,7 @@
       "contentLink": ""
     },
     {
-      "date": "2026-05-13",
+      "date": "2026-05-15",
       "tags": "CRM",
       "title": "May Product Newsletter - CRM",
       "type": "Product Comms",
@@ -200,10 +200,10 @@
       "sender": "Portico Product Updates",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/-temporary-slug-8ce411f2-7ec5-4281-b613-3ac9da753ffc?hs_preview=touEeIXR-212798927407"
     },
     {
-      "date": "2026-05-13",
+      "date": "2026-05-15",
       "tags": "SIS",
       "title": "May Product Newsletter - SIS",
       "type": "Product Comms",
@@ -211,7 +211,7 @@
       "sender": "Portico Product Updates",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/-temporary-slug-9f595ee4-1a14-4037-836b-15785ee0322d?hs_preview=fpNPHixw-212760711564"
     },
     {
       "date": "2026-05-14",
@@ -222,7 +222,7 @@
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/-temporary-slug-2b03e3d6-cc1c-495c-b640-c88fd616f86e?hs_preview=RkEZpJtn-212822256672"
     },
     {
       "date": "2026-05-18",
@@ -930,7 +930,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-09-26",
-      "attendees": "Jackson/Dylan"
+      "attendees": "Cid/Brian/Marc"
     },
     {
       "date": "2026-09-28",
@@ -943,7 +943,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-09-29",
-      "attendees": "Cid/Brian/Marc"
+      "attendees": "Daniel?"
     },
     {
       "date": "2026-10-07",
@@ -956,7 +956,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-09",
-      "attendees": "Daniel?"
+      "attendees": "Cara (Shawna backup)"
     },
     {
       "date": "2026-10-10",
@@ -969,7 +969,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-13",
-      "attendees": "Dale?"
+      "attendees": "Jackson"
     },
     {
       "date": "2026-10-14",
@@ -982,7 +982,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-17",
-      "attendees": "CS/Product?"
+      "attendees": "Jackson"
     },
     {
       "date": "2026-10-24",
@@ -995,7 +995,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-27",
-      "attendees": "Natalie"
+      "attendees": "Cara"
     },
     {
       "date": "2026-10-25",
@@ -1008,7 +1008,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-27",
-      "attendees": "Cara (Shawna backup)"
+      "attendees": "Todd?"
     },
     {
       "date": "2026-10-27",
@@ -1021,7 +1021,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-10-29",
-      "attendees": "Jackson"
+      "attendees": "Mark Moore"
     },
     {
       "date": "2026-10-31",
@@ -1056,7 +1056,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-11-12",
-      "attendees": "Jackson"
+      "attendees": "Mandy, Georgia"
     },
     {
       "date": "2026-11-11",
@@ -1080,7 +1080,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-11-14",
-      "attendees": "Cara"
+      "attendees": "Shawna"
     },
     {
       "date": "2026-11-14",
@@ -1093,7 +1093,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-11-17",
-      "attendees": "Todd?"
+      "attendees": "Noel"
     },
     {
       "date": "2026-11-25",
@@ -1193,7 +1193,7 @@
       "summary": "",
       "audienceLink": "",
       "contentLink": "",
-      "attendees": "Mark Moore"
+      "attendees": "Mandy, Cara, Georgia, Ron"
     }
   ]
 }
