@@ -165,10 +165,21 @@
       grid-template-columns: repeat(5, 1fr);
     }
     .cal-grid.month-layout { display: flex; flex-direction: column; }
+    .cal-week { position: relative; }
     .day-cells-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
 
     /* ---- Multi-day event bars ---- */
-    .event-bar-rows { display: flex; flex-direction: column; padding: 3px 0 2px; }
+    .event-bar-rows {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+      padding: 0;
+    }
     .event-bar-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -192,6 +203,7 @@
       line-height: 1.5;
       transition: filter 0.12s;
     }
+    .event-bar { pointer-events: auto; }
     .event-bar:hover { filter: brightness(0.85); }
     .event-bar-icon {
       display: inline-block;
@@ -216,11 +228,53 @@
       margin-right: 0;
     }
 
+    /* ---- OOO bars ---- */
+    .ooo-bar-rows {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      pointer-events: none;
+      padding: 0;
+    }
+    .ooo-bar-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      min-height: 8px;
+    }
+    .ooo-bar {
+      background: #dedad5;
+      border-radius: 2px;
+      margin: 1px 2px;
+      font-family: 'Figtree', sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      color: #9e9890;
+      padding: 0 4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 8px;
+    }
+    .ooo-bar.continues-left {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 0;
+    }
+    .ooo-bar.continues-right {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: 0;
+    }
+
     .cal-cell {
       border-right: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
       height: 140px;
-      padding: 10px 8px 6px;
+      padding: 10px 8px 34px;
       display: flex;
       flex-direction: column;
       background: var(--white);
@@ -1138,6 +1192,7 @@
     'Product Update': { color: '#9c3673', label: 'Product Update' },
     'Product Comms':  { color: '#da91bc', label: 'Product Comms' },
     'Sales Asset':    { color: '#e08600', label: 'Sales Asset' },
+    'OOO':            { color: '#c8c3bc', label: 'OOO' },
   };
 
   const LEGEND = [
@@ -1335,6 +1390,9 @@
   function isMultiDay(item) {
     return item.type === 'Event' && !!item.endDate && item.endDate > item.date;
   }
+  function isOOO(item) {
+    return item.type === 'OOO';
+  }
 
   function daysBetween(fromStr, toStr) {
     const a = new Date(fromStr + 'T00:00:00');
@@ -1358,6 +1416,56 @@
           continuesRight: item.endDate > weekFriStr,
         };
       });
+  }
+
+  function getWeekOOOBars(weekMonStr, weekFriStr) {
+    return allItems
+      .map((item, idx) => ({ item, idx }))
+      .filter(({ item }) => isOOO(item) && item.date)
+      .filter(({ item }) => {
+        const end = item.endDate || item.date;
+        return item.date <= weekFriStr && end >= weekMonStr;
+      })
+      .map(({ item, idx }) => {
+        const end = item.endDate || item.date;
+        const startOff = Math.max(daysBetween(weekMonStr, item.date), 0);
+        const endOff   = Math.min(daysBetween(weekMonStr, end), 4);
+        return {
+          item, idx,
+          startCol: startOff,
+          span: endOff - startOff + 1,
+          continuesLeft:  item.date < weekMonStr,
+          continuesRight: !!item.endDate && item.endDate > weekFriStr,
+        };
+      });
+  }
+
+  function renderOOOBars(ooos, container) {
+    const sorted = [...ooos].sort((a, b) => a.startCol - b.startCol);
+    const rows = [];
+    sorted.forEach(oo => {
+      let placed = false;
+      for (let r = 0; r < rows.length; r++) {
+        const last = rows[r][rows[r].length - 1];
+        if (last.startCol + last.span <= oo.startCol) { rows[r].push(oo); placed = true; break; }
+      }
+      if (!placed) rows.push([oo]);
+    });
+    rows.forEach(row => {
+      const rowEl = document.createElement('div');
+      rowEl.className = 'ooo-bar-row';
+      row.forEach(oo => {
+        const bar = document.createElement('div');
+        let cls = 'ooo-bar';
+        if (oo.continuesLeft)  cls += ' continues-left';
+        if (oo.continuesRight) cls += ' continues-right';
+        bar.className = cls;
+        bar.style.gridColumn = (oo.startCol + 1) + ' / span ' + oo.span;
+        bar.textContent = oo.item.title;
+        rowEl.appendChild(bar);
+      });
+      container.appendChild(rowEl);
+    });
   }
 
   function renderEventBars(events, container) {
@@ -1452,8 +1560,8 @@
         dn.textContent = day.getDate();
         cell.appendChild(dn);
 
-        // Multi-day events shown in bar layer; exclude them from cell pills
-        const singleIndices = indices.filter(idx => !isMultiDay(allItems[idx]));
+        // Multi-day events and OOO shown in bar layer; exclude them from cell pills
+        const singleIndices = indices.filter(idx => !isMultiDay(allItems[idx]) && !isOOO(allItems[idx]));
         const visible  = singleIndices.slice(0, MAX_VISIBLE);
         const overflow = inMonth ? singleIndices.slice(MAX_VISIBLE) : [];
         visible.forEach(idx => cell.appendChild(makePill(idx)));
@@ -1482,6 +1590,13 @@
         barLayer.className = 'event-bar-rows';
         renderEventBars(weekEvents, barLayer);
         weekEl.appendChild(barLayer);
+      }
+      const weekOOOs = getWeekOOOBars(weekMonStr, weekFriStr);
+      if (weekOOOs.length) {
+        const oooLayer = document.createElement('div');
+        oooLayer.className = 'ooo-bar-rows';
+        renderOOOBars(weekOOOs, oooLayer);
+        weekEl.appendChild(oooLayer);
       }
       grid.appendChild(weekEl);
 
@@ -1513,7 +1628,7 @@
       dn.textContent = day.getDate();
       cell.appendChild(dn);
 
-      indices.forEach(idx => cell.appendChild(makePill(idx)));
+      indices.filter(idx => !isOOO(allItems[idx])).forEach(idx => cell.appendChild(makePill(idx)));
       grid.appendChild(cell);
     }
   }
@@ -1674,7 +1789,14 @@
     if (hasLinks) {
       html += '<div class="modal-links">';
       if (item.contentLink) {
-        const btnLabel = item.type === 'Event' ? 'View Event Brief' : (item.youtubeLink ? 'View in HubSpot' : 'View Content');
+        const typeDisplayMap = {
+          'Event': 'Event Brief', 'Sales Asset': 'One-Pager', 'Website': 'Landing Page',
+          'Video': 'Video', 'Email': 'Email', 'Product Comms': 'Email',
+          'Event Comms': 'Email', 'Article': 'Article', 'Case Study': 'Case Study',
+          'Webinar': 'Webinar', 'Social': 'Post', 'Product Update': 'Product Update',
+        };
+        const typeDisplay = typeDisplayMap[item.type] || item.type;
+        const btnLabel = item.youtubeLink ? 'View in HubSpot' : 'View ' + typeDisplay;
         html += '<a class="modal-link-primary" href="' + item.contentLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">' + btnLabel + '</a>';
       }
       if (item.youtubeLink) {
