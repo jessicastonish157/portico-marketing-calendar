@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-20T13:53:00Z",
+  "lastUpdated": "2026-05-21T14:17:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -606,17 +606,6 @@
       "contentLink": ""
     },
     {
-      "date": "2026-06-14",
-      "tags": "Clinical Management",
-      "title": "ASRT Ed Pre-Event Email",
-      "type": "Event Comms",
-      "audience": "ASRT Ed Attendees",
-      "sender": "Portico",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
       "date": "2026-06-15",
       "tags": "Financial Aid",
       "title": "NASFAA Pre-Event Email",
@@ -752,19 +741,6 @@
       "contentLink": ""
     },
     {
-      "date": "2026-06-25",
-      "tags": "Clinical Management",
-      "title": "ASRT 2026 | Albuquerque, NM",
-      "type": "Event",
-      "audience": "ASRT Ed Attendees",
-      "sender": "",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": "",
-      "endDate": "2026-06-28",
-      "attendees": "Jackson, FA rep"
-    },
-    {
       "date": "2026-06-29",
       "tags": "Financial Aid",
       "title": "NASFAA 2026 | National Harbor, MD",
@@ -794,17 +770,6 @@
       "title": "OBBBA Q&A Email Promo",
       "type": "Email",
       "audience": "Financial Aid Prospects & Users",
-      "sender": "Portico",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-07-02",
-      "tags": "Clinical Management",
-      "title": "ASRT Ed Post-Event Email",
-      "type": "Event Comms",
-      "audience": "ASRT Ed Attendees",
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",

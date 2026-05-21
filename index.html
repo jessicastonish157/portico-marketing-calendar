@@ -246,28 +246,27 @@
       min-height: 8px;
     }
     .ooo-bar {
-      background: #dedad5;
-      border-radius: 2px;
-      margin: 1px 2px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      margin: 2px 2px;
+      padding: 0 4px;
+      overflow: hidden;
+    }
+    .ooo-name {
       font-family: 'Figtree', sans-serif;
       font-size: 9px;
       font-weight: 600;
-      color: #9e9890;
-      padding: 0 4px;
+      color: #b8b3ab;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 8px;
+      flex-shrink: 0;
     }
-    .ooo-bar.continues-left {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      margin-left: 0;
-    }
-    .ooo-bar.continues-right {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      margin-right: 0;
+    .ooo-line {
+      flex: 1;
+      height: 1px;
+      background: #c8c3bc;
+      min-width: 6px;
     }
 
     .cal-cell {
@@ -1461,7 +1460,15 @@
         if (oo.continuesRight) cls += ' continues-right';
         bar.className = cls;
         bar.style.gridColumn = (oo.startCol + 1) + ' / span ' + oo.span;
-        bar.textContent = oo.item.title;
+        if (!oo.continuesLeft) {
+          const nameEl = document.createElement('span');
+          nameEl.className = 'ooo-name';
+          nameEl.textContent = oo.item.title;
+          bar.appendChild(nameEl);
+        }
+        const lineEl = document.createElement('span');
+        lineEl.className = 'ooo-line';
+        bar.appendChild(lineEl);
         rowEl.appendChild(bar);
       });
       container.appendChild(rowEl);
