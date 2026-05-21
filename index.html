@@ -168,10 +168,10 @@
     .cal-week { position: relative; }
     .day-cells-grid { display: grid; grid-template-columns: repeat(5, 1fr); }
 
-    /* ---- Multi-day event bars ---- */
-    .event-bar-rows {
+    /* ---- Multi-day event + OOO bars (single overlay) ---- */
+    .bars-overlay {
       position: absolute;
-      bottom: 10px;
+      bottom: 0;
       left: 0;
       right: 0;
       z-index: 2;
@@ -183,7 +183,7 @@
     .event-bar-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      min-height: 22px;
+      min-height: 26px;
     }
     .event-bar {
       background: #006b8f;
@@ -229,34 +229,23 @@
     }
 
     /* ---- OOO bars ---- */
-    .ooo-bar-rows {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      pointer-events: none;
-      padding: 0;
-    }
     .ooo-bar-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      min-height: 8px;
+      min-height: 18px;
     }
     .ooo-bar {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 5px;
       background: none;
-      margin: 2px 2px;
-      padding: 0 4px;
+      margin: 4px 2px;
+      padding: 0 5px;
       overflow: hidden;
     }
     .ooo-name {
       font-family: 'Figtree', sans-serif;
-      font-size: 9px;
+      font-size: 9.5px;
       font-weight: 600;
       color: #b8b3ab;
       white-space: nowrap;
@@ -264,16 +253,17 @@
     }
     .ooo-line {
       flex: 1;
-      height: 1px;
+      height: 3px;
       background: #c8c3bc;
-      min-width: 6px;
+      border-radius: 2px;
+      min-width: 8px;
     }
 
     .cal-cell {
       border-right: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      height: 140px;
-      padding: 10px 8px 34px;
+      height: 155px;
+      padding: 10px 8px 60px;
       display: flex;
       flex-direction: column;
       background: var(--white);
@@ -1592,18 +1582,13 @@
       weekEl.appendChild(dayGrid);
 
       const weekEvents = getWeekSpanEvents(weekMonStr, weekFriStr);
-      if (weekEvents.length) {
-        const barLayer = document.createElement('div');
-        barLayer.className = 'event-bar-rows';
-        renderEventBars(weekEvents, barLayer);
-        weekEl.appendChild(barLayer);
-      }
-      const weekOOOs = getWeekOOOBars(weekMonStr, weekFriStr);
-      if (weekOOOs.length) {
-        const oooLayer = document.createElement('div');
-        oooLayer.className = 'ooo-bar-rows';
-        renderOOOBars(weekOOOs, oooLayer);
-        weekEl.appendChild(oooLayer);
+      const weekOOOs   = getWeekOOOBars(weekMonStr, weekFriStr);
+      if (weekEvents.length || weekOOOs.length) {
+        const overlay = document.createElement('div');
+        overlay.className = 'bars-overlay';
+        if (weekEvents.length) renderEventBars(weekEvents, overlay);
+        if (weekOOOs.length)   renderOOOBars(weekOOOs, overlay);
+        weekEl.appendChild(overlay);
       }
       grid.appendChild(weekEl);
 
