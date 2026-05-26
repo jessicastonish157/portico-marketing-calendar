@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-21T14:35:00Z",
+  "lastUpdated": "2026-05-26T17:21:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -192,6 +192,17 @@
       "contentLink": ""
     },
     {
+      "date": "2026-05-13",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Email Promo",
+      "type": "Email",
+      "audience": "Financial Aid Prospects & Users",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/-temporary-slug-2b03e3d6-cc1c-495c-b640-c88fd616f86e?hs_preview=RkEZpJtn-212822256672"
+    },
+    {
       "date": "2026-05-14",
       "tags": "CRM",
       "title": "May Product Newsletter - CRM",
@@ -212,17 +223,6 @@
       "summary": "",
       "audienceLink": "",
       "contentLink": "https://welcome.porticoedu.com/-temporary-slug-9f595ee4-1a14-4037-836b-15785ee0322d?hs_preview=fpNPHixw-212760711564"
-    },
-    {
-      "date": "2026-05-13",
-      "tags": "Financial Aid",
-      "title": "OBBBA Q&A Email Promo",
-      "type": "Email",
-      "audience": "Financial Aid Prospects & Users",
-      "sender": "Portico",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": "https://welcome.porticoedu.com/-temporary-slug-2b03e3d6-cc1c-495c-b640-c88fd616f86e?hs_preview=RkEZpJtn-212822256672"
     },
     {
       "date": "2026-05-14",
@@ -350,17 +350,6 @@
     },
     {
       "date": "2026-05-27",
-      "tags": "The Commons",
-      "title": "OBBBA - Hollywood/Cortiva Case Study",
-      "type": "Case Study",
-      "audience": "The Commons",
-      "sender": "Karen Martin-Brown",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-05-27",
       "tags": "Financial Aid",
       "title": "Live OBBBA Q&A",
       "type": "Webinar",
@@ -368,7 +357,9 @@
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "https://welcome.porticoedu.com/obbba-q-and-a",
+      "registrantLink": "https://app.hubspot.com/contacts/7762472/objectLists/10768/filters",
+      "attendeeLink": ""
     },
     {
       "date": "2026-05-28",
@@ -388,61 +379,6 @@
       "type": "Website",
       "audience": "General Audience",
       "sender": "Portico",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-06-01",
-      "tags": "Clinical Management",
-      "title": "What Scattered Clinical Documentation Does to Students",
-      "type": "Article",
-      "audience": "The Commons",
-      "sender": "Cara Heinrich",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-06-01",
-      "tags": "Clinical Management",
-      "title": "How to Switch from Paper to Digital",
-      "type": "Article",
-      "audience": "The Commons",
-      "sender": "Georgia Grey",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-06-01",
-      "tags": "Financial Aid",
-      "title": "Financial Aid Has a New Ceiling",
-      "type": "Article",
-      "audience": "The Commons",
-      "sender": "Nan Murray",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-06-01",
-      "tags": "CRM / Recruit",
-      "title": "The Case for TikTok in Career School Recruiting",
-      "type": "Article",
-      "audience": "The Commons",
-      "sender": "Jenn Lyles, Darius Goldman",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": "2026-06-01",
-      "tags": "Attendance",
-      "title": "Attendance Is a Technology Problem",
-      "type": "Article",
-      "audience": "The Commons",
-      "sender": "Jackson Batchelder",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -494,6 +430,18 @@
       "contentLink": ""
     },
     {
+      "date": "2026-06-02",
+      "tags": "Clinical Management",
+      "title": "Vet Tech Webinar (2 PM ET)",
+      "type": "Webinar",
+      "audience": "Vet Tech Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "",
+      "attendees": "Ron"
+    },
+    {
       "date": "2026-06-03",
       "tags": "Momentum",
       "title": "Momentum 2027: Save the Date",
@@ -511,6 +459,17 @@
       "type": "Article",
       "audience": "The Commons",
       "sender": "Natalie Gleason",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-05",
+      "tags": "The Commons",
+      "title": "OBBBA - Hollywood/Cortiva Case Study",
+      "type": "Case Study",
+      "audience": "The Commons",
+      "sender": "Karen Martin-Brown",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -549,6 +508,61 @@
       "contentLink": ""
     },
     {
+      "date": "2026-06-10",
+      "tags": "Clinical Management",
+      "title": "What Scattered Clinical Documentation Does to Students",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Cara Heinrich",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-10",
+      "tags": "Clinical Management",
+      "title": "How to Switch from Paper to Digital",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Georgia Grey",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-10",
+      "tags": "Financial Aid",
+      "title": "Financial Aid Has a New Ceiling",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Nan Murray",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-10",
+      "tags": "CRM / Recruit",
+      "title": "The Case for TikTok in Career School Recruiting",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Jenn Lyles, Darius Goldman",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-10",
+      "tags": "Attendance",
+      "title": "Attendance Is a Technology Problem",
+      "type": "Article",
+      "audience": "The Commons",
+      "sender": "Jackson Batchelder",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-06-11",
       "tags": "Clinical Management",
       "title": "ACEN 2026 | Rosemont, IL",
@@ -557,7 +571,7 @@
       "sender": "Trajecsys",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQCOwWZ57RExRpfoOdwRK5cDAZlryGrBp-J5UEjlmdE9CCU?e",
+      "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQCOwWZ57RExRpfoOdwRK5cDAZlryGrBp-J5UEjlmdE9CCU?e=SUvKWS",
       "endDate": "2026-06-12",
       "attendees": "Georgia, Mandy, Ron"
     },
@@ -617,12 +631,34 @@
       "contentLink": ""
     },
     {
+      "date": "2026-06-15",
+      "tags": "Attendance, Skills, Payments",
+      "title": "June Product Newsletter - Attendance",
+      "type": "Product Comms",
+      "audience": "Attendance Users",
+      "sender": "Portico Product Updates",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
       "date": "2026-06-16",
       "tags": "Attendance",
       "title": "Reimagine Your Externships",
       "type": "Article",
       "audience": "The Commons",
       "sender": "Ryan Barnhart",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-16",
+      "tags": "Clinical Management",
+      "title": "June Product Newsletter - Clinical Management",
+      "type": "Product Comms",
+      "audience": "Clinical Users",
+      "sender": "Portico Product Updates",
       "summary": "",
       "audienceLink": "",
       "contentLink": ""
@@ -749,7 +785,7 @@
       "sender": "",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "",
+      "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQDsdzVU-d6aQ4G87NCHCgg2AaQFPhbRZ1e2e67Ys_pRG-g?e=7KWfZp",
       "endDate": "2026-07-01",
       "attendees": "Siana, Noel, Karen, Christina"
     },
@@ -876,7 +912,9 @@
       "sender": "Portico",
       "summary": "",
       "audienceLink": "",
-      "contentLink": ""
+      "contentLink": "",
+      "registrantLink": "",
+      "attendeeLink": ""
     },
     {
       "date": "2026-07-17",
@@ -928,7 +966,7 @@
       "audienceLink": "",
       "contentLink": "",
       "endDate": "2026-08-08",
-      "attendees": "Noel, Ron"
+      "attendees": "Noel, Ron, Chris"
     },
     {
       "date": "2026-08-10",
@@ -1210,32 +1248,10 @@
     },
     {
       "date": null,
-      "tags": "Attendance, Skills, Payments",
-      "title": "June Product Newsletter - Attendance",
-      "type": "Product Comms",
-      "audience": "Attendance Users",
-      "sender": "Portico Product Updates",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": null,
       "tags": "Financial Aid",
       "title": "June Product Newsletter - FA",
       "type": "Product Comms",
       "audience": "FA Users",
-      "sender": "Portico Product Updates",
-      "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
-    },
-    {
-      "date": null,
-      "tags": "Clinical Management",
-      "title": "June Product Newsletter - Clinical Management",
-      "type": "Product Comms",
-      "audience": "Trajecsys Users",
       "sender": "Portico Product Updates",
       "summary": "",
       "audienceLink": "",

@@ -1777,7 +1777,7 @@
     html += '</div>'; // close props-list
 
     // Links
-    const hasLinks = item.audienceLink || item.contentLink || item.youtubeLink;
+    const hasLinks = item.audienceLink || item.contentLink || item.youtubeLink || item.registrantLink || item.attendeeLink;
     if (hasLinks) {
       html += '<div class="modal-links">';
       if (item.contentLink) {
@@ -1798,6 +1798,16 @@
         html += '<a class="modal-link-secondary" href="' + item.audienceLink + '" target="_blank" rel="noopener">' +
                   '<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
                   'View audience list</a>';
+      }
+      if (item.registrantLink) {
+        html += '<a class="modal-link-secondary" href="' + item.registrantLink + '" target="_blank" rel="noopener">' +
+                  '<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+                  'View registrant list</a>';
+      }
+      if (item.attendeeLink) {
+        html += '<a class="modal-link-secondary" href="' + item.attendeeLink + '" target="_blank" rel="noopener">' +
+                  '<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+                  'View attendee list</a>';
       }
       html += '</div>';
     }
