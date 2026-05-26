@@ -1682,7 +1682,7 @@
   document.getElementById('weekBtn').addEventListener('click', () => {
     if (viewMode === 'week') return;
     savedMonthView = { year: viewYear, month: viewMonth };
-    weekStart = getMonday(new Date(viewYear, viewMonth, 1));
+    weekStart = getMonday(new Date());
     viewMode  = 'week';
     document.getElementById('weekBtn').classList.add('active');
     document.getElementById('monthBtn').classList.remove('active');
@@ -1785,7 +1785,7 @@
           'Event': 'Event Brief', 'Sales Asset': 'One-Pager', 'Website': 'Landing Page',
           'Video': 'Video', 'Email': 'Email', 'Product Comms': 'Email',
           'Event Comms': 'Email', 'Article': 'Article', 'Case Study': 'Case Study',
-          'Webinar': 'Webinar', 'Social': 'Post', 'Product Update': 'Product Update',
+          'Webinar': 'Landing Page', 'Social': 'Post', 'Product Update': 'Product Update',
         };
         const typeDisplay = typeDisplayMap[item.type] || item.type;
         const btnLabel = item.youtubeLink ? 'View in HubSpot' : 'View ' + typeDisplay;
