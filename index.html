@@ -1621,10 +1621,19 @@
     document.getElementById('periodLabel').textContent = weekPeriodLabel();
     buildWeekdayHeader(true);
 
-    const todStr = todayStr();
-    const grid   = document.getElementById('calGrid');
-    grid.innerHTML = '';
-    grid.classList.remove('month-layout');
+    const todStr     = todayStr();
+    const grid       = document.getElementById('calGrid');
+    grid.innerHTML   = '';
+    grid.classList.add('month-layout');
+
+    const weekMonStr = toDateStr(weekStart);
+    const weekFriStr = toDateStr(addDays(weekStart, 4));
+
+    const weekEl = document.createElement('div');
+    weekEl.className = 'cal-week';
+
+    const dayGrid = document.createElement('div');
+    dayGrid.className = 'day-cells-grid';
 
     for (let d = 0; d < 5; d++) {
       const day     = addDays(weekStart, d);
@@ -1640,9 +1649,23 @@
       dn.textContent = day.getDate();
       cell.appendChild(dn);
 
-      indices.filter(idx => !isOOO(allItems[idx])).forEach(idx => cell.appendChild(makePill(idx)));
-      grid.appendChild(cell);
+      indices.filter(idx => !isOOO(allItems[idx]) && !isMultiDay(allItems[idx])).forEach(idx => cell.appendChild(makePill(idx)));
+      dayGrid.appendChild(cell);
     }
+
+    weekEl.appendChild(dayGrid);
+
+    const weekEvents = getWeekSpanEvents(weekMonStr, weekFriStr);
+    const weekOOOs   = getWeekOOOBars(weekMonStr, weekFriStr);
+    if (weekEvents.length || weekOOOs.length) {
+      const overlay = document.createElement('div');
+      overlay.className = 'bars-overlay';
+      if (weekEvents.length) renderEventBars(weekEvents, overlay);
+      if (weekOOOs.length)   renderOOOBars(weekOOOs, overlay);
+      weekEl.appendChild(overlay);
+    }
+
+    grid.appendChild(weekEl);
   }
 
   function makePill(idx) {
