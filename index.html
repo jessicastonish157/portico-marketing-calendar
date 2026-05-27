@@ -738,6 +738,26 @@
       transition: filter 0.15s;
     }
     .modal-link-primary:hover { filter: brightness(0.88); }
+    .modal-link-outline {
+      display: block;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-family: 'Figtree', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      background: transparent;
+      border: 2px solid;
+      transition: opacity 0.15s;
+    }
+    .modal-link-outline:hover { opacity: 0.72; }
+    .modal-link-outline.tbd {
+      border-color: var(--border) !important;
+      color: var(--dim) !important;
+      cursor: default;
+      pointer-events: none;
+    }
     .modal-link-secondary {
       display: flex;
       align-items: center;
@@ -1801,16 +1821,16 @@
                   'View audience list</a>';
       }
       if (isWebinar) {
-        const arrowSvg = '<svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        const outlineStyle = 'style="border-color:' + tp.color + ';color:' + tp.color + '"';
         if (item.registrantLink) {
-          html += '<a class="modal-link-secondary" href="' + item.registrantLink + '" target="_blank" rel="noopener">' + arrowSvg + 'View registrants</a>';
+          html += '<a class="modal-link-outline" ' + outlineStyle + ' href="' + item.registrantLink + '" target="_blank" rel="noopener">View registrants</a>';
         } else {
-          html += '<div class="modal-link-secondary modal-link-placeholder">' + arrowSvg + 'View registrants<span style="margin-left:auto;font-size:11px;font-weight:400;color:var(--dim)">Link TBD</span></div>';
+          html += '<a class="modal-link-outline tbd">View registrants</a>';
         }
         if (item.attendeeLink) {
-          html += '<a class="modal-link-secondary" href="' + item.attendeeLink + '" target="_blank" rel="noopener">' + arrowSvg + 'View attendees</a>';
+          html += '<a class="modal-link-outline" ' + outlineStyle + ' href="' + item.attendeeLink + '" target="_blank" rel="noopener">View attendees</a>';
         } else {
-          html += '<div class="modal-link-secondary modal-link-placeholder">' + arrowSvg + 'View attendees<span style="margin-left:auto;font-size:11px;font-weight:400;color:var(--dim)">Link TBD</span></div>';
+          html += '<a class="modal-link-outline tbd">View attendees</a>';
         }
       }
       html += '</div>';

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T14:48:00Z",
+  "lastUpdated": "2026-05-27T14:58:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -358,8 +358,8 @@
       "summary": "",
       "audienceLink": "",
       "contentLink": "https://welcome.porticoedu.com/obbba-q-and-a",
-      "registrantLink": "",
-      "attendeeLink": "https://app.hubspot.com/contacts/7762472/objectLists/10768/filters"
+      "registrantLink": "https://app.hubspot.com/contacts/7762472/objectLists/10768/filters",
+      "attendeeLink": ""
     },
     {
       "date": "2026-05-28",
