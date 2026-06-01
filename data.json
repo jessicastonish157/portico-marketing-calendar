@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T15:01:00Z",
+  "lastUpdated": "2026-06-01T13:36:30Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -432,14 +432,13 @@
     {
       "date": "2026-06-02",
       "tags": "Clinical Management",
-      "title": "Vet Tech Webinar (2 PM ET)",
-      "type": "Webinar",
+      "title": "Vet Tech Webinar Promo Email (Announcement)",
+      "type": "Email",
       "audience": "Vet Tech Educators",
       "sender": "Trajecsys",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "",
-      "attendees": "Ron"
+      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
     },
     {
       "date": "2026-06-03",
@@ -664,6 +663,17 @@
       "contentLink": ""
     },
     {
+      "date": "2026-06-16",
+      "tags": "Clinical Management",
+      "title": "Vet Tech Webinar Promo Email (1 Week Out)",
+      "type": "Email",
+      "audience": "Vet Tech Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+    },
+    {
       "date": "2026-06-17",
       "tags": "Clinical Management",
       "title": "ACEN Post-Event Email",
@@ -764,6 +774,39 @@
       "contentLink": "https://simplifyedinc.sharepoint.com/:w:/s/Marketing/IQAOqTCKwQyUQIcJ9jTgdAFgAfvrCs_ql78gYyqJaiyzLB0?e=Fme",
       "endDate": "2026-06-24",
       "attendees": "Natalie, Dale, Cara, Marc, Chris, Siana"
+    },
+    {
+      "date": "2026-06-22",
+      "tags": "Clinical Management",
+      "title": "Vet Tech Webinar Promo Email (Day Before)",
+      "type": "Email",
+      "audience": "Vet Tech Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+    },
+    {
+      "date": "2026-06-23",
+      "tags": "Clinical Management",
+      "title": "Vet Tech Webinar Promo Email (Morning Of)",
+      "type": "Email",
+      "audience": "Vet Tech Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+    },
+    {
+      "date": "2026-06-23",
+      "tags": "Clinical Management",
+      "title": "Vet Tech Webinar (2 PM ET)",
+      "type": "Webinar",
+      "audience": "Vet Tech Educators",
+      "sender": "Trajecsys",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
     },
     {
       "date": "2026-06-24",
