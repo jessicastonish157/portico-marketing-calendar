@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T13:36:30Z",
+  "lastUpdated": "2026-06-02T17:09:03Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -431,6 +431,39 @@
     },
     {
       "date": "2026-06-02",
+      "tags": "Momentum",
+      "title": "Doug Momentum Video Posts",
+      "type": "Social",
+      "audience": "General Audience",
+      "sender": "Portico / Doug Kaplan",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-02",
+      "tags": "ColdIQ",
+      "title": "ColdIQ Field Names + Target Inputs",
+      "type": "Campaign Ops",
+      "audience": "Internal GTM",
+      "sender": "Marketing",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-02",
+      "tags": "GTM AI",
+      "title": "GTM AI Current State",
+      "type": "Internal Brief",
+      "audience": "GTM Leadership",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-03",
       "tags": "Clinical Management",
       "title": "Vet Tech Webinar Promo Email (Announcement)",
       "type": "Email",
@@ -442,6 +475,28 @@
     },
     {
       "date": "2026-06-03",
+      "tags": "Financial Aid",
+      "title": "FASFAA Post-Event Sales Sequence",
+      "type": "Sales Sequence",
+      "audience": "FASFAA Attendees",
+      "sender": "Sales",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-05",
+      "tags": "Financial Aid",
+      "title": "OBBBA Q&A Follow-Up Email (All Answers)",
+      "type": "Email",
+      "audience": "Financial Aid Webinar Registrants",
+      "sender": "Portico",
+      "summary": "",
+      "audienceLink": "",
+      "contentLink": ""
+    },
+    {
+      "date": "2026-06-09",
       "tags": "Momentum",
       "title": "Momentum 2027: Save the Date",
       "type": "Email",
@@ -463,7 +518,7 @@
       "contentLink": ""
     },
     {
-      "date": "2026-06-05",
+      "date": "2026-06-13",
       "tags": "The Commons",
       "title": "OBBBA - Hollywood/Cortiva Case Study",
       "type": "Case Study",
