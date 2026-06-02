@@ -190,8 +190,15 @@
       min-height: 30px;
     }
     .event-bar {
-      background: #006b8f;
-      border: 1.5px solid #004961;
+      --event-left-outline: 1.5px;
+      --event-right-outline: 1.5px;
+      background:
+        linear-gradient(#004961, #004961) top / 100% 1.5px no-repeat,
+        linear-gradient(#004961, #004961) bottom / 100% 1.5px no-repeat,
+        linear-gradient(#004961, #004961) left / var(--event-left-outline) 100% no-repeat,
+        linear-gradient(#004961, #004961) right / var(--event-right-outline) 100% no-repeat,
+        #006b8f;
+      border: none;
       border-radius: 4px;
       color: white;
       font-family: 'Figtree', sans-serif;
@@ -220,13 +227,13 @@
       flex-shrink: 0;
     }
     .event-bar.continues-left {
-      border-left: none;
+      --event-left-outline: 0px;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       margin-left: 0;
     }
     .event-bar.continues-right {
-      border-right: none;
+      --event-right-outline: 0px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       margin-right: 0;
