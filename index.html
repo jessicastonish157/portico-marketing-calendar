@@ -225,20 +225,6 @@
     }
 
     /* ---- OOO bars ---- */
-    .ooo-bar-row {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      min-height: 18px;
-    }
-    .ooo-bar {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      background: none;
-      margin: 4px 2px;
-      padding: 0 5px;
-      overflow: hidden;
-    }
     .ooo-name {
       font-family: 'Figtree', sans-serif;
       font-size: 9.5px;
@@ -254,12 +240,25 @@
       border-radius: 2px;
       min-width: 8px;
     }
+    .ooo-inline {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 4px 0 0;
+      padding: 0 2px;
+      min-width: 0;
+      flex-shrink: 0;
+    }
+    .ooo-inline .ooo-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
     .cal-cell {
       border-right: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
       height: 155px;
-      padding: 10px 8px 60px;
+      padding: 10px 8px 12px;
       display: flex;
       flex-direction: column;
       background: var(--white);
@@ -1423,61 +1422,29 @@
       });
   }
 
-  function getWeekOOOBars(weekMonStr, weekFriStr) {
-    return allItems
-      .map((item, idx) => ({ item, idx }))
-      .filter(({ item }) => isOOO(item) && item.date)
-      .filter(({ item }) => {
-        const end = item.endDate || item.date;
-        return item.date <= weekFriStr && end >= weekMonStr;
-      })
-      .map(({ item, idx }) => {
-        const end = item.endDate || item.date;
-        const startOff = Math.max(daysBetween(weekMonStr, item.date), 0);
-        const endOff   = Math.min(daysBetween(weekMonStr, end), 4);
-        return {
-          item, idx,
-          startCol: startOff,
-          span: endOff - startOff + 1,
-          continuesLeft:  item.date < weekMonStr,
-          continuesRight: !!item.endDate && item.endDate > weekFriStr,
-        };
-      });
+  function getOOOsForDate(dayStr) {
+    return allItems.filter(item => {
+      if (!isOOO(item) || !item.date) return false;
+      const end = item.endDate || item.date;
+      return item.date <= dayStr && end >= dayStr;
+    });
   }
 
-  function renderOOOBars(ooos, container) {
-    const sorted = [...ooos].sort((a, b) => a.startCol - b.startCol);
-    const rows = [];
-    sorted.forEach(oo => {
-      let placed = false;
-      for (let r = 0; r < rows.length; r++) {
-        const last = rows[r][rows[r].length - 1];
-        if (last.startCol + last.span <= oo.startCol) { rows[r].push(oo); placed = true; break; }
-      }
-      if (!placed) rows.push([oo]);
-    });
-    rows.forEach(row => {
-      const rowEl = document.createElement('div');
-      rowEl.className = 'ooo-bar-row';
-      row.forEach(oo => {
-        const bar = document.createElement('div');
-        let cls = 'ooo-bar';
-        if (oo.continuesLeft)  cls += ' continues-left';
-        if (oo.continuesRight) cls += ' continues-right';
-        bar.className = cls;
-        bar.style.gridColumn = (oo.startCol + 1) + ' / span ' + oo.span;
-        if (!oo.continuesLeft) {
-          const nameEl = document.createElement('span');
-          nameEl.className = 'ooo-name';
-          nameEl.textContent = oo.item.title;
-          bar.appendChild(nameEl);
-        }
-        const lineEl = document.createElement('span');
-        lineEl.className = 'ooo-line';
-        bar.appendChild(lineEl);
-        rowEl.appendChild(bar);
-      });
-      container.appendChild(rowEl);
+  function appendOOOInline(cell, dayStr) {
+    getOOOsForDate(dayStr).forEach(item => {
+      const ooo = document.createElement('div');
+      ooo.className = 'ooo-inline';
+
+      const nameEl = document.createElement('span');
+      nameEl.className = 'ooo-name';
+      nameEl.textContent = item.title;
+      ooo.appendChild(nameEl);
+
+      const lineEl = document.createElement('span');
+      lineEl.className = 'ooo-line';
+      ooo.appendChild(lineEl);
+
+      cell.appendChild(ooo);
     });
   }
 
@@ -1585,6 +1552,7 @@
           ob.addEventListener('click', () => openDayView(dayStr, indices));
           cell.appendChild(ob);
         }
+        appendOOOInline(cell, dayStr);
         cells.push(cell);
       }
 
@@ -1598,12 +1566,10 @@
       weekEl.appendChild(dayGrid);
 
       const weekEvents = getWeekSpanEvents(weekMonStr, weekFriStr);
-      const weekOOOs   = getWeekOOOBars(weekMonStr, weekFriStr);
-      if (weekEvents.length || weekOOOs.length) {
+      if (weekEvents.length) {
         const overlay = document.createElement('div');
         overlay.className = 'bars-overlay';
         if (weekEvents.length) renderEventBars(weekEvents, overlay);
-        if (weekOOOs.length)   renderOOOBars(weekOOOs, overlay);
         weekEl.appendChild(overlay);
       }
       grid.appendChild(weekEl);
@@ -1646,18 +1612,17 @@
       cell.appendChild(dn);
 
       indices.filter(idx => !isOOO(allItems[idx]) && !isMultiDay(allItems[idx])).forEach(idx => cell.appendChild(makePill(idx)));
+      appendOOOInline(cell, dayStr);
       dayGrid.appendChild(cell);
     }
 
     weekEl.appendChild(dayGrid);
 
     const weekEvents = getWeekSpanEvents(weekMonStr, weekFriStr);
-    const weekOOOs   = getWeekOOOBars(weekMonStr, weekFriStr);
-    if (weekEvents.length || weekOOOs.length) {
+    if (weekEvents.length) {
       const overlay = document.createElement('div');
       overlay.className = 'bars-overlay';
       if (weekEvents.length) renderEventBars(weekEvents, overlay);
-      if (weekOOOs.length)   renderOOOBars(weekOOOs, overlay);
       weekEl.appendChild(overlay);
     }
 
