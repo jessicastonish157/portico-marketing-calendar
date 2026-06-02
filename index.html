@@ -332,6 +332,7 @@
       display: block;
       width: 100%;
       padding: 3px 7px;
+      box-sizing: border-box;
       border-radius: 4px;
       font-family: 'Figtree', sans-serif;
       font-size: 10.5px;
@@ -348,6 +349,9 @@
       flex-shrink: 0;
       transition: filter 0.12s;
       min-width: 0;
+    }
+    .pill.outlined {
+      box-shadow: inset 0 0 0 1.5px var(--pill-outline);
     }
     .pill:hover { filter: brightness(0.85); }
     .pill-icon {
@@ -1725,11 +1729,18 @@
     const btn  = document.createElement('button');
     btn.className = 'pill';
     btn.style.background = tp.color;
-    if (item.type === 'Event')          btn.style.border = '1.5px solid #004961';
-    if (item.type === 'Product Update') btn.style.border = '1.5px solid #4c1a38';
-    if (item.type === 'Article')        btn.style.border = '1.5px solid #7b2717';
-    if (item.type === 'Sales Asset')    btn.style.border = '1.5px solid #c97900';
-    if (item.type === 'Sequence' || item.type === 'Sales Sequence') btn.style.border = '1.5px solid #43501f';
+    const outlines = {
+      'Event': '#004961',
+      'Product Update': '#4c1a38',
+      'Article': '#7b2717',
+      'Sales Asset': '#c97900',
+      'Sequence': '#43501f',
+      'Sales Sequence': '#43501f',
+    };
+    if (outlines[item.type]) {
+      btn.classList.add('outlined');
+      btn.style.setProperty('--pill-outline', outlines[item.type]);
+    }
     const icon = TYPE_ICONS[item.type] || '';
     btn.innerHTML = icon + escHtml(item.title);
     btn.addEventListener('click', () => openItemView(idx, null));
