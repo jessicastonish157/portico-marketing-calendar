@@ -776,22 +776,13 @@
     }
     .modal-link-primary:hover { filter: brightness(0.88); }
     .modal-link-primary.tbd {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      color: var(--dim);
-      background: var(--filler-bg) !important;
+      color: #8d877f;
+      background: #e8e3dc !important;
       border: 1px solid var(--border);
       cursor: default;
       pointer-events: none;
     }
     .modal-link-primary.tbd:hover { filter: none; }
-    .modal-link-primary.tbd span {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
     .modal-link-outline {
       display: block;
       text-align: center;
@@ -808,7 +799,8 @@
     .modal-link-outline:hover { opacity: 0.72; }
     .modal-link-outline.tbd {
       border-color: var(--border) !important;
-      color: var(--dim) !important;
+      color: #8d877f !important;
+      background: #e8e3dc;
       cursor: default;
       pointer-events: none;
     }
@@ -1083,10 +1075,12 @@
     .modal-link-placeholder {
       display: flex;
       align-items: center;
-      color: var(--dim);
+      color: #8d877f;
+      background: #e8e3dc;
       cursor: default;
+      pointer-events: none;
     }
-    .modal-link-placeholder:hover { background: none; }
+    .modal-link-placeholder:hover { background: #e8e3dc; }
     .campaign-row {
       display: flex;
       align-items: center;
@@ -1401,7 +1395,7 @@
           if (m.url) {
             html += '<a class="modal-link-secondary" href="' + m.url + '" target="_blank" rel="noopener">' + arrowSvg + m.label + '</a>';
           } else {
-            html += '<div class="modal-link-secondary modal-link-placeholder">' + m.label + '<span style="margin-left:auto;font-size:11px;font-weight:400;color:var(--dim)">Link TBD</span></div>';
+            html += '<div class="modal-link-secondary modal-link-placeholder">' + m.label + '</div>';
           }
         });
       }
@@ -1924,7 +1918,7 @@
         const btnLabel = item.youtubeLink ? 'View in HubSpot' : 'View ' + typeDisplay;
         html += '<a class="modal-link-primary" href="' + item.contentLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">' + btnLabel + '</a>';
       } else if (needsContentPlaceholder) {
-        html += '<div class="modal-link-primary tbd">View ' + typeDisplay + '<span>Link TBD</span></div>';
+        html += '<div class="modal-link-primary tbd">View ' + typeDisplay + '</div>';
       }
       if (item.youtubeLink) {
         html += '<a class="modal-link-primary" href="' + item.youtubeLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">View in YouTube</a>';

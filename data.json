@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T15:10:06Z",
+  "lastUpdated": "2026-06-03T19:45:00Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -362,7 +362,7 @@
       "attendeeLink": ""
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-06-03",
       "tags": "Clinical Management",
       "title": "ACEN Pre-Event Email",
       "type": "Event Comms",
@@ -430,15 +430,15 @@
       "contentLink": "https://app.hubspot.com/sequences/7762472/sequence/306131015?field=updated_at&order=DESC&page=1&enrolledBy=ALL_USERS"
     },
     {
-      "date": "2026-06-03",
+      "date": "2026-06-04",
       "tags": "Financial Aid",
       "title": "FASFAA Post-Event Email",
       "type": "Event Comms",
       "audience": "FASFAA Attendees",
       "sender": "Noel Suarez",
       "summary": "",
-      "audienceLink": "",
-      "contentLink": ""
+      "audienceLink": "https://app.hubspot.com/contacts/7762472/objectLists/10797/filters",
+      "contentLink": "https://7762472.hubspotpreview-na1.com/_hcms/preview/email/214252251146?portalId=7762472&preview_key=nDVzTBRo&_preview=true&from_buffer=false&hsPreviewerApp=email&cacheBust=0"
     },
     {
       "date": "2026-06-02",
