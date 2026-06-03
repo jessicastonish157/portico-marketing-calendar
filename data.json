@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T15:01:03Z",
+  "lastUpdated": "2026-06-03T15:10:06Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -430,7 +430,7 @@
       "contentLink": "https://app.hubspot.com/sequences/7762472/sequence/306131015?field=updated_at&order=DESC&page=1&enrolledBy=ALL_USERS"
     },
     {
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "tags": "Financial Aid",
       "title": "FASFAA Post-Event Email",
       "type": "Event Comms",
