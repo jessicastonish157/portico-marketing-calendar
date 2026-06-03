@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-02T17:39:58Z",
+  "lastUpdated": "2026-06-03T15:01:03Z",
   "campaigns": [
     {
       "name": "Financial Aid (OBBBA)",
@@ -459,8 +459,8 @@
       "audience": "Vet Tech Educators",
       "sender": "Trajecsys",
       "summary": "",
-      "audienceLink": "",
-      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+      "audienceLink": "https://app.hubspot.com/contacts/7762472/objectLists/10795/filters",
+      "contentLink": "https://7762472.hubspotpreview-na1.com/_hcms/preview/email/214229612824?portalId=7762472&preview_key=DNJQqHkf&_preview=true&from_buffer=false&hsPreviewerApp=email&cacheBust=0"
     },
     {
       "date": "2026-06-03",
@@ -715,7 +715,7 @@
       "sender": "Trajecsys",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+      "contentLink": ""
     },
     {
       "date": "2026-06-17",
@@ -828,7 +828,7 @@
       "sender": "Trajecsys",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+      "contentLink": ""
     },
     {
       "date": "2026-06-23",
@@ -839,7 +839,7 @@
       "sender": "Trajecsys",
       "summary": "",
       "audienceLink": "",
-      "contentLink": "https://welcome.porticoedu.com/distance-vet-tech-webinar"
+      "contentLink": ""
     },
     {
       "date": "2026-06-23",

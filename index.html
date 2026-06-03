@@ -775,6 +775,23 @@
       transition: filter 0.15s;
     }
     .modal-link-primary:hover { filter: brightness(0.88); }
+    .modal-link-primary.tbd {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      color: var(--dim);
+      background: var(--filler-bg) !important;
+      border: 1px solid var(--border);
+      cursor: default;
+      pointer-events: none;
+    }
+    .modal-link-primary.tbd:hover { filter: none; }
+    .modal-link-primary.tbd span {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
     .modal-link-outline {
       display: block;
       text-align: center;
@@ -1891,20 +1908,23 @@
 
     // Links
     const isWebinar = item.type === 'Webinar';
-    const hasLinks = item.audienceLink || item.contentLink || item.youtubeLink || item.registrantLink || item.attendeeLink || isWebinar;
+    const typeDisplayMap = {
+      'Event': 'Event Brief', 'Sales Asset': 'One-Pager', 'Website': 'Landing Page',
+      'Video': 'Video', 'Email': 'Email', 'Product Comms': 'Email',
+      'Event Comms': 'Email', 'Article': 'Article', 'Case Study': 'Case Study',
+      'Webinar': 'Landing Page', 'Social': 'Post', 'Product Update': 'Product Update',
+      'Sequence': 'Sequence', 'Sales Sequence': 'Sequence',
+    };
+    const typeDisplay = typeDisplayMap[item.type] || item.type;
+    const needsContentPlaceholder = ['Email', 'Product Comms', 'Event Comms'].includes(item.type) && !item.contentLink;
+    const hasLinks = needsContentPlaceholder || item.audienceLink || item.contentLink || item.youtubeLink || item.registrantLink || item.attendeeLink || isWebinar;
     if (hasLinks) {
       html += '<div class="modal-links">';
       if (item.contentLink) {
-        const typeDisplayMap = {
-          'Event': 'Event Brief', 'Sales Asset': 'One-Pager', 'Website': 'Landing Page',
-          'Video': 'Video', 'Email': 'Email', 'Product Comms': 'Email',
-          'Event Comms': 'Email', 'Article': 'Article', 'Case Study': 'Case Study',
-          'Webinar': 'Landing Page', 'Social': 'Post', 'Product Update': 'Product Update',
-          'Sequence': 'Sequence', 'Sales Sequence': 'Sequence',
-        };
-        const typeDisplay = typeDisplayMap[item.type] || item.type;
         const btnLabel = item.youtubeLink ? 'View in HubSpot' : 'View ' + typeDisplay;
         html += '<a class="modal-link-primary" href="' + item.contentLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">' + btnLabel + '</a>';
+      } else if (needsContentPlaceholder) {
+        html += '<div class="modal-link-primary tbd">View ' + typeDisplay + '<span>Link TBD</span></div>';
       }
       if (item.youtubeLink) {
         html += '<a class="modal-link-primary" href="' + item.youtubeLink + '" target="_blank" rel="noopener" style="background:' + tp.color + '">View in YouTube</a>';
