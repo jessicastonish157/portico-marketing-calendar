@@ -360,6 +360,9 @@
     .pill.outlined {
       box-shadow: inset 0 0 0 1.5px var(--pill-outline);
     }
+    .pill.sequence-pill {
+      font-weight: 500;
+    }
     .pill:hover { filter: brightness(0.85); }
     .pill-icon {
       display: inline-block;
@@ -847,6 +850,7 @@
     .dli-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
     .dli-text { flex: 1; min-width: 0; }
     .dli-title { font-size: 14px; font-weight: 600; color: var(--obsidian); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .day-list-item.sequence-item .dli-title { font-weight: 500; }
     .dli-sub   { font-size: 12px; color: var(--dim); display: block; margin-top: 3px; }
     .dli-arrow { color: var(--border); font-size: 18px; flex-shrink: 0; }
 
@@ -962,6 +966,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+    .result-row.sequence-item .result-title { font-weight: 500; }
     .result-meta {
       display: flex;
       gap: 20px;
@@ -1248,8 +1253,8 @@
     'Video':          { color: '#00ab8e', label: 'Video' },
     'Product Update': { color: '#9c3673', label: 'Product Update' },
     'Product Comms':  { color: '#da91bc', label: 'Product Comms' },
-    'Sequence':       { color: '#5f6f32', label: 'Sequence' },
-    'Sales Sequence': { color: '#5f6f32', label: 'Sequence' },
+    'Sequence':       { color: '#ed9b8c', label: 'Sequence' },
+    'Sales Sequence': { color: '#ed9b8c', label: 'Sequence' },
     'Sales Asset':    { color: '#e08600', label: 'Sales Asset' },
     'OOO':            { color: '#c8c3bc', label: 'OOO' },
   };
@@ -1265,7 +1270,7 @@
     { color: '#00ab8e', label: 'Video' },
     { color: '#9c3673', label: 'Product Update' },
     { color: '#da91bc', label: 'Product Comms' },
-    { color: '#5f6f32', label: 'Sequence' },
+    { color: '#ed9b8c', label: 'Sequence' },
     { color: '#e08600', label: 'Sales Asset / One Pager' },
   ];
 
@@ -1442,8 +1447,6 @@
     'Product Update': '<img class="pill-icon" src="icons/rocket.png" alt="">',
     'Article':        '<img class="pill-icon" src="icons/pencil.png" alt="">',
     'Sales Asset':    '<img class="pill-icon" src="icons/art-studies.png" alt="">',
-    'Sequence':       '<img class="pill-icon" src="icons/pencil.png" alt="">',
-    'Sales Sequence': '<img class="pill-icon" src="icons/pencil.png" alt="">',
     'Website':        '<img class="pill-icon" src="icons/web.png" alt="">',
     'Landing Page':   '<img class="pill-icon" src="icons/web.png" alt="">',
   };
@@ -1454,6 +1457,9 @@
   }
   function isOOO(item) {
     return item.type === 'OOO';
+  }
+  function isSequence(item) {
+    return item.type === 'Sequence' || item.type === 'Sales Sequence';
   }
 
   function daysBetween(fromStr, toStr) {
@@ -1746,14 +1752,13 @@
     const tp   = typeOf(item);
     const btn  = document.createElement('button');
     btn.className = 'pill';
+    if (isSequence(item)) btn.classList.add('sequence-pill');
     btn.style.background = tp.color;
     const outlines = {
       'Event': '#004961',
       'Product Update': '#4c1a38',
       'Article': '#7b2717',
       'Sales Asset': '#c97900',
-      'Sequence': '#43501f',
-      'Sales Sequence': '#43501f',
     };
     if (outlines[item.type]) {
       btn.classList.add('outlined');
@@ -1825,7 +1830,8 @@
     indices.forEach(idx => {
       const item = allItems[idx];
       const tp   = typeOf(item);
-      html += '<button class="day-list-item" data-idx="' + idx + '">' +
+      const itemClass = isSequence(item) ? ' sequence-item' : '';
+      html += '<button class="day-list-item' + itemClass + '" data-idx="' + idx + '">' +
               '<div class="dli-dot" style="background:' + tp.color + '"></div>' +
               '<div class="dli-text">' +
                 '<span class="dli-title">' + item.title + '</span>' +
@@ -2000,7 +2006,8 @@
     matches.forEach(item => {
       const tp  = typeOf(item);
       const idx = allItems.indexOf(item);
-      html += '<button class="result-row" data-idx="' + idx + '">' +
+      const itemClass = isSequence(item) ? ' sequence-item' : '';
+      html += '<button class="result-row' + itemClass + '" data-idx="' + idx + '">' +
         '<div class="result-dot" style="background:' + tp.color + '"></div>' +
         '<span class="result-title">' + item.title + '</span>' +
         '<div class="result-meta">' +
